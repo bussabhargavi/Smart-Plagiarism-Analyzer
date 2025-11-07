@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plagarism Detail View</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://cdn.pixabay.com/photo/2016/11/29/04/17/technology-1867612_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.94);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .highlight-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 10px;
+            background: #f9f9f9;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        h3 {
+            font-weight: 600;
+            color: #0d6efd;
+        }
+
+        h5 {
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <div class="overlay">
+            <h3 class="mb-4 text-center">Comparison for: {{ student_file }}</h3>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h5>Original File Text</h5>
+                    <div class="highlight-box">{{ original|safe }}</div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h5>Student File Text</h5>
+                    <div class="highlight-box">{{ student|safe }}</div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="/" class="btn btn-secondary">← Go Back</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

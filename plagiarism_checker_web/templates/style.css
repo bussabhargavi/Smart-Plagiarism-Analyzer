@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+form, table {
+  width: 100%;
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #2d89ef;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+a {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #2d89ef;
+}
